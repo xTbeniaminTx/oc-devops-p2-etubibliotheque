@@ -48,8 +48,8 @@ public class SpringSecurityConfig {
                 .sessionManagement(management -> management.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())
                 .authorizeHttpRequests(authorize -> authorize
-                        // No auth needed on :
-                        .requestMatchers("/actuator/**").permitAll()
+                        // No auth needed on register, login and health supervision:
+                        .requestMatchers("/actuator/health").permitAll()
                         .requestMatchers("/api/register", "/api/login").permitAll()
                         // Others protected routes will be added here.
                         .anyRequest().authenticated()
