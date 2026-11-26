@@ -59,9 +59,10 @@ Avec Docker Desktop, dans l'onglet `Exec` du conteneur `mysql-1` :
 mysql -u "$MYSQL_USER" --database="$MYSQL_DATABASE" -p
 ```
 
-![1-docker-desktop](pictures/1-docker-desktop.png)
-
-![2-docker-desktop-bdd](pictures/2-docker-desktop-bdd.png)
+<p>
+  <a href="pictures/1-docker-desktop.png"><img src="pictures/1-docker-desktop.png" alt="Conteneur MySQL dans Docker Desktop" width="49%"></a>
+  <a href="pictures/2-docker-desktop-bdd.png"><img src="pictures/2-docker-desktop-bdd.png" alt="Requête dans l'onglet Exec de Docker Desktop" width="49%"></a>
+</p>
 
 ## Exécution des tests
 
