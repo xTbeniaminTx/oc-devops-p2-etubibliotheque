@@ -30,3 +30,7 @@ management:
       exposure:
         # seul health est exposé, pour la supervision
         include: health
+# signature et durée de validité des tokens JWT
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 3600000
