@@ -28,4 +28,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        # seul health est exposé, pour la supervision
+        include: health
