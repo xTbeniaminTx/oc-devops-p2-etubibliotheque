@@ -5,11 +5,8 @@ Les agents de la bibliothèque créent leur compte, se connectent, puis gèrent 
 
 ## Structure du dépôt
 
-```
-.
-├── back/    API REST Spring Boot et base MySQL (voir back/README.md)
-└── front/   application Angular (voir front/README.md)
-```
+- [`back/`](back/README.md) : API REST Spring Boot et base MySQL
+- [`front/`](front/README.md) : application Angular
 
 ## Stack technique
 
