@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Register } from '../models/Register';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Login } from '../models/Login';
 
 @Injectable({
   providedIn: 'root'
@@ -11,5 +12,10 @@ export class UserService {
 
   register(user: Register): Observable<Object> {
     return this.httpClient.post('/api/register', user);
+  }
+
+  // le back renvoie le token en texte brut, pas en JSON
+  login(credentials: Login): Observable<string> {
+    return this.httpClient.post('/api/login', credentials, { responseType: 'text' });
   }
 }
